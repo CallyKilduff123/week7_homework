@@ -9,8 +9,7 @@ class Patient(Person):
     # def ensure_paediatric_patient(self):
     #     if self.age >= 16:
     #         return f"Adult patient: Not eligible for paediatric services."
-    #     else:
-    #         return f"Paediatric patient"
+
     #
     # def define_condition(self):
     #     if self.condition == 'JIA':

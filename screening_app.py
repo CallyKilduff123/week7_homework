@@ -13,15 +13,21 @@ scheduler = AppointmentScheduler()
 # Create JIA patient instances
 patient1 = JiaPatient("Peppa Pig", 5, True, 4, 2, 10)
 # Add patients to the screening schedule based on risk level
-screening_schedule.add_patient(patient1)
-print(scheduler.schedule_next_appointment(patient1))
-patient2 = JiaPatient("Chloe Pig", 12, False, 6, 5, 5)
-screening_schedule.add_patient(patient2)
-print(scheduler.schedule_next_appointment(patient2))
-patient3 = JiaPatient("Danny Dog", 6, True, 6, 0, 0)
-screening_schedule.add_patient(patient3)
-print(scheduler.schedule_next_appointment(patient3))
+print(screening_schedule.add_patient(patient1))
+print(scheduler.schedule_appointment(patient1))
 
+# print(patient_list_string)
+patient2 = JiaPatient("Chloe Pig", 12, False, 6, 5, 5)
+print(screening_schedule.add_patient(patient2))
+print(scheduler.schedule_appointment(patient2))
+
+patient3 = JiaPatient("Danny Dog", 6, True, 6, 0, 0)
+print(screening_schedule.add_patient(patient3))
+print(scheduler.schedule_appointment(patient3))
+
+patient4 = JiaPatient("Daddy Pig", 46, False, 9, 0, 0)
+print(screening_schedule.add_patient(patient4))
+print(scheduler.schedule_appointment(patient4))
 
 
 #
