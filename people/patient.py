@@ -6,6 +6,13 @@ class Patient(Person):
         super().__init__(name, age)
         self.condition = condition
 
+    # base class to person
+    # super class to jia-patient
+    # constructor to initialise condition - to be returned as JIA in the next class
+    # option to introduce other conditions and have other base classes
+
+
+
     # def ensure_paediatric_patient(self):
     #     if self.age >= 16:
     #         return f"Adult patient: Not eligible for paediatric services."

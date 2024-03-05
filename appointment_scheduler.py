@@ -1,8 +1,8 @@
-from people.jia_patient import JiaPatient
-
-jia = JiaPatient
-
-
+# from people.jia_patient import JiaPatient
+#
+# jia = JiaPatient
+#
+# schedule appointments based on risk and number of appointments
 class AppointmentScheduler:
     def schedule_appointment(self, jia_patient):
         if jia_patient.age > 16:

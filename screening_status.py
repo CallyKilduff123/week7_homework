@@ -1,12 +1,14 @@
-from people.jia_patient import JiaPatient
+# from people.jia_patient import JiaPatient
+#
+# jia = JiaPatient
 
-jia = JiaPatient
-
-
+# constructor - make a list to add patients who require screening
 class ScreeningSchedule:
     def __init__(self):
         self.patients_for_screening = []
 
+    # add patient based on age (are they even paed patient?)
+    # then based on risk - high are for screening
     def add_patient(self, jia_patient):
         if jia_patient.age >= 16:
             return (f"--------------------------------------------------------------------------------------------\n"

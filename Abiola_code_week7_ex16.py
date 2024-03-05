@@ -68,10 +68,12 @@ class Customer(Person):
 
 
 
-    if __name__ = "__main__":
-        person1 =Person("james","brown",30)
-        employee = Employee("john","smith",91,datetime(02,10,2019))
-        customer1 = Customer("jim","brown",25,datetime(03,04,1994))
+if __name__ = "__main__":
+    import datetime
+
+    person1 =Person("james","brown",30)
+    employee = Employee("john","smith",91,datetime(02,10,2019))
+    customer1 = Customer("jim","brown",25,datetime(03,04,1994))
 
 
 class Bankaccount:(Person)

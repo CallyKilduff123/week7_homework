@@ -1,5 +1,9 @@
 from people.patient import Patient
 
+# base class to patient
+# need to assess risk of uveitis so 'import' the name age and condition from superclass
+# make the condition JIA
+# constructor to initialise the risk factors
 
 class JiaPatient(Patient):
     def __init__(self, name, age, ana_status, age_of_onset, joints_involved, appointments):
@@ -9,6 +13,9 @@ class JiaPatient(Patient):
         self.joints_involved = joints_involved
         self.risk_level = self.calculate_risk()
         self.appointments = appointments
+
+    # method to calculate risk based on risk factors
+    # if 1 risk factor - child for screening programme
 
     def calculate_risk(self):
         risk_factors = 0
@@ -23,6 +30,7 @@ class JiaPatient(Patient):
         else:
             return "Low"
 
+    # method to add appointments to determine next appointment interval
     def add_appointment(self):
         self.appointments += 1
 
